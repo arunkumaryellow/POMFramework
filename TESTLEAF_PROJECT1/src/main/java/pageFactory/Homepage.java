@@ -13,7 +13,7 @@ public class Homepage extends AbstractPage{
 	}
 	@FindBy(how=How.ID,using="username")
 	WebElement uName;
-	public Homepage username()
+	public Homepage username(String Uname)
 	{
 		type(uName, "DemoSalesManager");
 		return this;
@@ -21,7 +21,7 @@ public class Homepage extends AbstractPage{
 	
 	@FindBy(how=How.ID,using="password")
 	WebElement password;
-	public Homepage password()
+	public Homepage password(String pass)
 	{
 		type(password, "crmsfa");
 		return this;

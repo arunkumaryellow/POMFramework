@@ -59,7 +59,14 @@ public class Leadspage extends AbstractPage{
 	WebElement firstNametext;
 	public Leadspage verifytxt()
 	{
-		verifytext(firstNametext, "Yuva");
+		verifytext(firstNametext, "James");
+		return this;
+	}
+	@FindBy(how = How.XPATH,using="//div[@class='x-grid3-cell-inner x-grid3-col-firstName'][1]/a")
+	WebElement clickfirstname;
+	public Leadspage clickfirstname()
+	{
+		click(clickfirstname);
 		return this;
 	}
 	@FindBy(how = How.XPATH,using="//a[text()='Duplicate Lead']")

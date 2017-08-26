@@ -114,8 +114,8 @@ public class WdEventListernersCalls implements WebDriverEventListener{
 
 	@Override
 	public void beforeClickOn(WebElement arg0, WebDriver arg1) {
-		WebDriverWait wait=new WebDriverWait(arg1, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(arg0));
+	/*	WebDriverWait wait=new WebDriverWait(arg1, 10);
+		wait.until(ExpectedConditions.elementToBeClickable(arg0));*/
 		
 		System.out.println("Before the click on");
 
